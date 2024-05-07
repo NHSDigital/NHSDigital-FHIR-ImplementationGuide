@@ -1,34 +1,26 @@
-<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/JOGE/OneDrive%20-%20NHS/SchemasR4/fhir-all-xsd/valueset.xsd">
-	<id value="England-NRLRecordCategory"/>
-	<url value="https://fhir.nhs.uk/England/ValueSet/England-NRLRecordCategory"/>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="England-FormatCode"/>
+	<url value="https://fhir.nhs.uk/England/ValueSet/England-FormatCode"/>
 	<version value="1.0.0"/>
-	<name value="EnglandNRLRecordCategory"/>
-	<title value="England NRL Record Category"/>
+	<name value="EnglandFormatCode"/>
+	<title value="England FormatCode"/>
 	<status value="draft"/>
-	<date value="2024-04-03"/>
+	<date value="2024-01-24"/>
 	<publisher value="NHS England"/>
 	<contact>
-		<name value="NRLS Team"/>
+		<name value="NHS England"/>
 		<telecom>
 			<system value="email"/>
-			<value value="nrls@nhs.net"/>
+			<value value="interoperabilityteam@nhs.net"/>
 			<use value="work"/>
 			<rank value="1"/>
 		</telecom>
 	</contact>
-	<description value="A code from the SNOMED Clinical Terminology UK coding system to represent the NRL clinical record class."/>
+	<description value="A ValueSet that identifies the format of the content of the target document or record of a National Record Locator pointer."/>
 	<copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
-			<system value="http://snomed.info/sct"/>
-			<concept>
-				<code value="734163000"/>
-				<display value="Care plan"/>
-			</concept>
-			<concept>
-				<code value="1102421000000108"/>
-				<display value="Observations"/>
-			</concept>
+			<system value="https://fhir.nhs.uk/England/CodeSystem/England-FormatCode"/>
 		</include>
 	</compose>
 </ValueSet>

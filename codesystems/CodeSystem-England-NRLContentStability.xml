@@ -1,11 +1,11 @@
-<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/JOGE/OneDrive%20-%20NHS/SchemasR4/fhir-all-xsd/valueset.xsd">
-	<id value="England-RecordCategory"/>
-	<url value="https://fhir.nhs.uk/England/ValueSet/England-RecordCategory"/>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="England-ContentStability"/>
+	<url value="https://fhir.nhs.uk/England/CodeSystem/England-NRLContentStability"/>
 	<version value="1.0.0"/>
-	<name value="EnglandRecordCategory"/>
-	<title value="England Record Category"/>
+	<name value="EnglandContentStability"/>
+	<title value="England ContentStability"/>
 	<status value="draft"/>
-	<date value="2024-03-05"/>
+	<date value="2024-01-24"/>
 	<publisher value="NHS England"/>
 	<contact>
 		<name value="NRLS Team"/>
@@ -16,19 +16,17 @@
 			<rank value="1"/>
 		</telecom>
 	</contact>
-	<description value="A code from the SNOMED Clinical Terminology UK coding system to represent the NRL clinical record class."/>
+	<description value="This code system is used to capture the content stability of an NRL target document or record."/>
 	<copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<compose>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<concept>
-				<code value="734163000"/>
-				<display value="Care plan"/>
-			</concept>
-			<concept>
-				<code value="1102421000000108"/>
-				<display value="Observations"/>
-			</concept>
-		</include>
-	</compose>
-</ValueSet>
+	<content value="complete"/>
+	<concept>
+		<code value="dynamic"/>
+		<display value="Dynamic"/>
+		<definition value="A dynamic document or record is one which returns the latest, most recent available information at the time of retrieval."/>
+	</concept>
+	<concept>
+		<code value="static"/>
+		<display value="Static"/>
+		<definition value="A static document or record is one in which the contents and exact representation will not change from the time of creation."/>
+	</concept>
+</CodeSystem>

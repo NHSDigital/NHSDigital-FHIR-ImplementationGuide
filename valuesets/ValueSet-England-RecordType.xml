@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/JOGE/OneDrive%20-%20NHS/SchemasR4/fhir-all-xsd/valueset.xsd">
-	<id value="England-NRLRecordType"/>
-	<url value="https://fhir.nhs.uk/England/ValueSet/England-NRLRecordType"/>
+	<id value="England-RecordType"/>
+	<url value="https://fhir.nhs.uk/England/ValueSet/England-RecordType"/>
 	<version value="1.0.0"/>
-	<name value="EnglandNRLRecordType"/>
+	<name value="EnglandRecordType"/>
 	<title value="England NRL Record Type"/>
 	<status value="draft"/>
-	<date value="2024-28-03"/>
+	<date value="2024-03-05"/>
 	<publisher value="NHS England"/>
 	<contact>
 		<name value="NRLS Team"/>

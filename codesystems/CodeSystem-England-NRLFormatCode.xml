@@ -2,8 +2,8 @@
 	<id value="England-FormatCode"/>
 	<url value="https://fhir.nhs.uk/England/CodeSystem/England-NRLFormatCode"/>
 	<version value="1.0.0"/>
-	<name value="EnglandFormatCode"/>
-	<title value="England FormatCode"/>
+	<name value="EnglandNRLFormatCode"/>
+	<title value="England NRL FormatCode"/>
 	<status value="draft"/>
 	<date value="2024-01-24"/>
 	<publisher value="NHS England"/>

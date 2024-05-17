@@ -2,7 +2,7 @@
     <id value="England-MessageReasonBars" />
     <url value="https://fhir.nhs.uk/England/CodeSystem/England-MessageReasonBars" />
     <version value="1.1.0" />
-    <name value="England-MessageReasonBars" />
+    <name value="EnglandMessageReasonBars" />
     <title value="England Message Reason Bars" />
     <status value="active" />
     <date value="2024-05-17" />

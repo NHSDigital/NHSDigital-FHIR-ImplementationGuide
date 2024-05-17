@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="England-FGMRemovalReason" />
-  <url value="https://fhir.nhs.uk/England/CodeSystem/England-MessageEventsBars" />
+  <url value="https://fhir.nhs.uk/England/CodeSystem/England-FGMRemovalReason" />
   <version value="1.0.0" />
   <name value="EnglandFGMRemovalReason" />
   <title value="England FGM Removal Reason" />

@@ -1,9 +1,9 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="England-MessageReasonBars" />
+    <id value="England-MessageReasonBARS" />
     <url value="https://fhir.nhs.uk/CodeSystem/message-reason-bars" />
     <version value="1.0.0" />
-    <name value="EnglandMessageReasonBars" />
-    <title value="England Message Reason Bars" />
+    <name value="EnglandMessageReasonBARS" />
+    <title value="England Message Reason BARS" />
     <status value="draft" />
     <date value="2024-06-14" />
     <publisher value="NHS England" />

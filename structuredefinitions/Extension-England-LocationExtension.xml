@@ -122,7 +122,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/LocationExtension" />
+      <fixedUri value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-LocationExtension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

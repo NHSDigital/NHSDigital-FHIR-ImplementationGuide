@@ -1,12 +1,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-England-LocationExtension" />
-  <url value="https://fhir.nhs.uk/StructureDefinition/LocationExtension" />
-  <version value="1.0.3" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-LocationExtension" />
+  <version value="1.0.0" />
   <name value="ExtensionEnglandLocationExtension" />
   <title value="Extension England Location Extension" />
   <status value="draft" />
-  <date value="2024-06-17" />
-  <description value="Location Extension" />
+  <date value="2024-06-19" />
+  <description value="The Location extension is used to provide clarification, using alternative methods of describing a precise location." />
+  <purpose value="The Location extension is used to provide clarification, using alternative methods of describing a precise location." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

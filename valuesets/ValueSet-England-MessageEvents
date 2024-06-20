@@ -1,9 +1,21 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="nhsdigital-message-events" />
-  <url value="https://fhir.nhs.uk/ValueSet/NHSDigital-message-events" />
-  <version value="1.0.12" />
-  <name value="NHSMessageEvents" />
+  <id value="England-MessageEvents" />
+  <url value="https://fhir.nhs.uk/England/ValueSet/England-MessageEvents" />
+  <version value="1.0.0" />
+  <name value="EnglandMessageEvents" />
+  <title value="England Message Events" />
   <status value="draft" />
+  <date value="2024-06-20" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
   <description value="A ValueSet to identify the type of FHIR Message" />
   <compose>
     <include>

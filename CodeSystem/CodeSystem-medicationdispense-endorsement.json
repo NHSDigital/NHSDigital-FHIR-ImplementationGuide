@@ -8,12 +8,12 @@
             "value": "medicationdispense-endorsement"
         }
     ],
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "DispensingEndorsement",
     "title": "Dispensing Endorsement",
     "status": "draft",
     "experimental": true,
-    "date": "2013-04-21",
+    "date": "2024-08-08",
     "publisher": "NHS Digital",
     "contact":  [
         {
@@ -95,6 +95,10 @@
         {
             "code": "PD",
             "display": "Packaged Doses"
+        },
+        {
+            "code": "WR",
+            "display": "Waste Reduction (Wales Only)"
         }
     ]
 }

@@ -145,10 +145,10 @@
     </concept>
     <concept>
         <code value="1001"></code>
-        <display value="Welsh Prescription Welsh Dispenser – No Charge (Wales Only)"></code>
+        <display value="Welsh Prescription Welsh Dispenser – No Charge (Wales Only)" />
     </concept>
     <concept>
         <code value="1002"></code>
-        <display value="Welsh Entitlement Card (Wales Only)"></code>
+        <display value="Welsh Entitlement Card (Wales Only)" />
     </concept>
 </CodeSystem>

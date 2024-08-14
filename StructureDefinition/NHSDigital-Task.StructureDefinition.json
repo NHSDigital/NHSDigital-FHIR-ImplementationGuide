@@ -3,6 +3,8 @@
   "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task",
   "name": "NHSDigitalTask",
   "status": "draft",
+  "version": "1.0.1",
+  "date": "2024-08-14T13:51:00+00:00"
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

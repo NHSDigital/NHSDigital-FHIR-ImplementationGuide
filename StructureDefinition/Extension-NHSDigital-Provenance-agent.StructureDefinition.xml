@@ -4,6 +4,8 @@
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent" />
   <name value="ExtensionProvenanceAgent" />
   <status value="draft" />
+  <version value="1.0.1" />
+  <date value="2024-08-14T13:51:00+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -95,7 +97,6 @@
         <severity value="error" />
         <human value="SDS Role Profile Id must be 12 digits" />
         <expression value="identifier.where(system='https://fhir.nhs.uk/Id/sds-role-profile-id').exists().not() or (identifier.where(system='https://fhir.nhs.uk/Id/sds-role-profile-id').exists()  and identifier.where(system='https://fhir.nhs.uk/Id/sds-role-profile-id').value.matches('^[0-9]{12}$'))" />
-        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole" />
       </constraint>
     </element>
     <element id="Extension.value[x].identifier">

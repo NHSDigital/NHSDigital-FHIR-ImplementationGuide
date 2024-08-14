@@ -95,7 +95,6 @@
         <severity value="error" />
         <human value="SDS Role Profile Id must be 12 digits" />
         <expression value="identifier.where(system='https://fhir.nhs.uk/Id/sds-role-profile-id').exists().not() or (identifier.where(system='https://fhir.nhs.uk/Id/sds-role-profile-id').exists()  and identifier.where(system='https://fhir.nhs.uk/Id/sds-role-profile-id').value.matches('^[0-9]{12}$'))" />
-        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole" />
       </constraint>
     </element>
     <element id="Extension.value[x].identifier">

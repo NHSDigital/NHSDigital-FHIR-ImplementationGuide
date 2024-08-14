@@ -13,6 +13,6 @@
       "base" : [
       "Immunization"],
       "type" : "token",
-      "expression" : "Immunization.extension.where(url='https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure').valueCodeableConcept",
+      "expression" : "Immunization.extension.where(url='https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure').value",
       "xpathUsage" : "normal"
     }

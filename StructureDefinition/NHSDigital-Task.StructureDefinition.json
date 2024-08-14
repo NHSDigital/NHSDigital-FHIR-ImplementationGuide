@@ -231,8 +231,7 @@
             "key": "patient-nhs",
             "severity": "error",
             "human": "Length of the supplied NHS Number is wrong.",
-            "expression": "identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists().not() or (identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists()  and identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').value.matches('^([0-9]{10})$'))",
-            "source": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim"
+            "expression": "identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists().not() or (identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists()  and identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').value.matches('^([0-9]{10})$'))"
           }
         ],
         "mustSupport": true

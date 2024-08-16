@@ -317,23 +317,13 @@
     </element>
     <element id="Claim.insurance">
       <path value="Claim.insurance" />
-      <definition value="For EPS this is the NHS Business Services Authority. The sequence value must always be 1.&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;&#xD;&#xA;&quot;insurance&quot;:  [&#xD;&#xA;    {&#xD;&#xA;        &quot;sequence&quot;: 1,&#xD;&#xA;        &quot;focal&quot;: true,&#xD;&#xA;        &quot;coverage&quot;: {&#xD;&#xA;            &quot;identifier&quot;: {&#xD;&#xA;                &quot;system&quot;: &quot;https://fhir.nhs.uk/Id/ods-organization-code&quot;,&#xD;&#xA;                &quot;value&quot;: &quot;T1450&quot;&#xD;&#xA;            },&#xD;&#xA;            &quot;display&quot;: &quot;NHS BUSINESS SERVICES AUTHORITY&quot;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;],&#xD;&#xA;```" />
+      <definition value="For EPS this is the NHS Business Services Authority (for England) or NWSSP (for Wales). The sequence value must always be 1." />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Claim.insurance.coverage.identifier">
       <path value="Claim.insurance.coverage.identifier" />
       <min value="1" />
-    </element>
-    <element id="Claim.insurance.coverage.identifier.system">
-      <path value="Claim.insurance.coverage.identifier.system" />
-      <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
-    </element>
-    <element id="Claim.insurance.coverage.identifier.value">
-      <path value="Claim.insurance.coverage.identifier.value" />
-      <min value="1" />
-      <fixedString value="T1450" />
     </element>
     <element id="Claim.item">
       <path value="Claim.item" />

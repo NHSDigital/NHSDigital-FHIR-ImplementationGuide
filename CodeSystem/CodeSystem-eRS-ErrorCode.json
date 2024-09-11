@@ -29,6 +29,11 @@
             "code": "NO_RELATIONSHIP",
             "display": "No Relationship",
             "definition": "The current caller does not have a valid relationship to interact with the target resource."
-        }
+        },
+       {
+            "code": "PATIENT_SENSITIVE",
+            "display": "Patient Sensitive"
+        }		
     ]
 }
+

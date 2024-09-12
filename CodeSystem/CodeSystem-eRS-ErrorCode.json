@@ -2,11 +2,11 @@
     "resourceType": "CodeSystem",
     "id": "afcc1d2a-edb0-4652-ad39-b6c2bc92eb7f",
     "url": "https://fhir.nhs.uk/CodeSystem/ers-error-codes",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "ERSErrorCodes",
     "title": "ERSErrorCodes",
     "status": "active",
-    "date": "2022-09-30",
+    "date": "2024-09-11",
     "publisher": "NHS Digital",
     "contact":  [
         {
@@ -29,6 +29,11 @@
             "code": "NO_RELATIONSHIP",
             "display": "No Relationship",
             "definition": "The current caller does not have a valid relationship to interact with the target resource."
-        }
+        },
+       {
+            "code": "PATIENT_SENSITIVE",
+            "display": "Patient Sensitive"
+        }		
     ]
 }
+

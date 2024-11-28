@@ -13,14 +13,6 @@
   <baseDefinition value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient" />
   <derivation value="constraint" />
   <differential>
-    <element id="Patient.extension:deathNotificationStatus">
-      <path value="Patient.extension" />
-      <sliceName value="deathNotificationStatus" />
-    </element>
-    <element id="Patient.extension:deathNotificationStatus.extension">
-      <path value="Patient.extension.extension" />
-      <min value="1" />
-    </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <min value="1" />
@@ -45,14 +37,6 @@
     <element id="Patient.address">
       <path value="Patient.address" />
       <min value="1" />
-    </element>
-    <element id="Patient.address.extension:addressKey">
-      <path value="Patient.address.extension" />
-      <sliceName value="addressKey" />
-    </element>
-    <element id="Patient.address.extension:addressKey.extension">
-      <path value="Patient.address.extension.extension" />
-      <min value="2" />
     </element>
   </differential>
 </StructureDefinition>

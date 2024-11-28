@@ -21,22 +21,18 @@
         <expression value="identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists().not() or (identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists()  and identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').value.matches('^([0-9]{10})$'))" />
       </constraint>
     </element>
-    <element id="Patient.extension">
+    <element id="Patient.extension:deathNotificationStatus">
       <path value="Patient.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+      <sliceName value="deathNotificationStatus" />
+    </element>
+    <element id="Patient.extension:deathNotificationStatus.extension">
+      <path value="Patient.extension.extension" />
+      <min value="1" />
     </element>
     <element id="Patient.extension:medicalApplianceSupplier">
       <path value="Patient.extension" />
       <sliceName value="medicalApplianceSupplier" />
       <definition value="```json&#xD;&#xA;{&#xD;&#xA;            &quot;url&quot;: &quot;https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicalApplianceSupplier&quot;,&#xD;&#xA;            &quot;valueReference&quot;: {&#xD;&#xA;                &quot;identifier&quot;: {&#xD;&#xA;                    &quot;system&quot;: &quot;https://fhir.nhs.uk/Id/ods-organization-code&quot;,&#xD;&#xA;                    &quot;value&quot;: &quot;Y34567&quot;&#xD;&#xA;                }&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;```" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -48,7 +44,6 @@
       <path value="Patient.extension" />
       <sliceName value="nominatedPharmacy" />
       <definition value="A patient can choose up to three nominated dispensers to cover different contractor types:&#xD;&#xA;&#xD;&#xA;- Community Pharmacy&#xD;&#xA;- Appliance Contractor&#xD;&#xA;- Dispensing Doctor&#xD;&#xA;&#xD;&#xA;Each of those nominations is held in an Extension. &#xD;&#xA;&#xD;&#xA;All require a ODS/ANANA code from [Organisation Data Services](https://digital.nhs.uk/services/organisation-data-service). This contains download CSV files for these organisations, for API access please see  [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)&#xD;&#xA;&#xD;&#xA;#### nominatedPharmacy (extension nominatedPharmacy)&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;&quot;extension&quot;:  [&#xD;&#xA;        {&#xD;&#xA;            &quot;url&quot;: &quot;https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy&quot;,&#xD;&#xA;            &quot;valueReference&quot;: {&#xD;&#xA;                &quot;identifier&quot;: {&#xD;&#xA;                    &quot;system&quot;: &quot;https://fhir.nhs.uk/Id/ods-organization-code&quot;,&#xD;&#xA;                    &quot;value&quot;: &quot;Y12345&quot;&#xD;&#xA;                }&#xD;&#xA;            }&#xD;&#xA;        },&#xD;&#xA;```" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy" />
@@ -59,7 +54,6 @@
       <path value="Patient.extension" />
       <sliceName value="preferredDispenserOrganization" />
       <definition value="A patient's preferred dispensing organisation.&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;{&#xD;&#xA;            &quot;url&quot;: &quot;https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization&quot;,&#xD;&#xA;            &quot;valueReference&quot;: {&#xD;&#xA;                &quot;identifier&quot;: {&#xD;&#xA;                    &quot;system&quot;: &quot;https://fhir.nhs.uk/Id/ods-organization-code&quot;,&#xD;&#xA;                    &quot;value&quot;: &quot;Y23456&quot;&#xD;&#xA;                }&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;```" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -131,24 +125,15 @@
       <definition value="List of addresses associated with the patient.&#xD;&#xA;&#xD;&#xA;These are fully populated on a retrieval or a successful update, only the home address is returned on a search. When a patient tagged as `restricted` or `very restricted` is retrieved, all addresses are removed from the response.&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;&quot;address&quot;:  [&#xD;&#xA;        {&#xD;&#xA;            &quot;line&quot;:  [&#xD;&#xA;                &quot;1 Trevelyan Square&quot;,&#xD;&#xA;                &quot;Boar Lane&quot;,&#xD;&#xA;                &quot;City Centre&quot;,&#xD;&#xA;                &quot;Leeds&quot;,&#xD;&#xA;                &quot;West Yorkshire&quot;&#xD;&#xA;            ],&#xD;&#xA;            &quot;postalCode&quot;: &quot;LS1 6AE&quot;,&#xD;&#xA;            &quot;use&quot;: &quot;home&quot;&#xD;&#xA;        }&#xD;&#xA;    ],&#xD;&#xA;```" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.address.extension">
-      <path value="Patient.address.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Patient.address.extension:addressKey">
       <path value="Patient.address.extension" />
       <sliceName value="addressKey" />
       <definition value="Postal Address File (PAF) key associated with this address formatted as a FHIR extension. Empty if no PAF key for the address is known, or an object specifying the code system of the address key and the value of the address key." />
-      <min value="0" />
-      <max value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.extension:addressKey.extension">
+      <path value="Patient.address.extension.extension" />
+      <min value="2" />
     </element>
     <element id="Patient.address.use">
       <path value="Patient.address.use" />
@@ -191,10 +176,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Patient.generalPractitioner.identifier">
-      <path value="Patient.generalPractitioner.identifier" />
-      <min value="1" />
-    </element>
     <element id="Patient.generalPractitioner.identifier.system">
       <path value="Patient.generalPractitioner.identifier.system" />
       <min value="1" />
@@ -207,7 +188,6 @@
       <path value="Patient.generalPractitioner" />
       <sliceName value="registeredGPPractice" />
       <definition value="Patient's registered GP Practice. Use V81998 for no registered practice and V81999 for not known as per NHS Data Dictionary guidelines." />
-      <max value="1" />
     </element>
     <element id="Patient.generalPractitioner:registeredGPPractice.identifier.system">
       <path value="Patient.generalPractitioner.identifier.system" />
